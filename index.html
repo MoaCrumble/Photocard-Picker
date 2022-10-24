@@ -1,1 +1,28 @@
-<h1>Hello World!asdfasd</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pull Your Photocard</title>
+		<style>
+html, body {
+	text-align: center;
+}
+		</style>
+
+	</head>
+	<body>
+		<img id="bild" src="https://cdn.discordapp.com/attachments/800865429488795670/1033751381078704138/73206438_491813518081160_1539890176711458816_n.jpg" />
+
+		<script>
+			var bilder = [
+				"https://cdn.discordapp.com/attachments/800865429488795670/1033132434662895736/unknown.png", 
+				"https://cdn.discordapp.com/attachments/800865429488795670/1033132582931529758/unknown.png",
+				"https://cdn.discordapp.com/attachments/800865429488795670/1033132270598492211/unknown.png",
+				"https://pbs.twimg.com/media/FDBB0oQakAA3L06.jpg",
+				"https://pbs.twimg.com/media/FDBzDmuaIAA0eO6.jpg"
+				]
+
+			var bild = document.getElementById("bild");
+			bild.src = bilder[Math.floor(Math.random() * bilder.length)];
+		</script>
+	</body>
+</html>
